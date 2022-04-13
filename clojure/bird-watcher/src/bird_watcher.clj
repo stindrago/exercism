@@ -7,19 +7,19 @@
   (last birds))
 
 (defn inc-bird [birds]
-  (assoc birds 6 (inc (today birds))))
+  (assoc birds (dec (count birds)) (inc (today birds))))
 
 (defn day-without-birds? [birds]
-  (contains? birds 0))
+  (some? (some zero? birds)))
 
-(defn n-days-count [birds n])
+(defn n-days-count [birds n]
+  (reduce + (take n birds)))
 
-(defn busy-days [birds])
+(defn busy-days [birds]
+  (let [busy-day-count 5]
+    ;; Filter `birds` and get all entries greater or equal to `busy-day-count`. Count result.
+    (count (filter #(>= % busy-day-count) birds))))
 
-(defn odd-week? [birds])
-
-;; In-line CIDER evaluation with C-c C-e. Info @ https://docs.cider.mx/cider/usage/code_evaluation.html
-(comment
-  last-week
-  (today last-week)
-  (inc-bird last-week))
+(defn odd-week? [birds]
+  (let [pattern [1 0 1 0 1 0 1]]
+    (= birds pattern)))
