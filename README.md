@@ -11,7 +11,7 @@
 [cars-assemble]: https://exercism.org/tracks/clojure/exercises/cars-assemble
 [cars-assemble-src]: ./clojure/cars-assemble/src/cars_assemble.clj
 [interest-is-interesting]: https://exercism.org/tracks/clojure/exercises/interest-is-interesting
-[interest-is-interesting-src]: ./clojure/interest-is-interesting/src/interest_isSinteresting.clj
+[interest-is-interesting-src]: ./clojure/interest-is-interesting/src/interest_is_interesting.clj
 [annalyns-infiltration]: https://exercism.org/tracks/clojure/exercises/annalyns-infiltration
 [annalyns-infiltration-src]: ./clojure/annalyns-infiltration/src/annalyns_infiltration.clj
 [license]: ./LICENSE
