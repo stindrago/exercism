@@ -19,4 +19,4 @@
   [s]
   (let [error (log-level s)
         message (message s)]
-    (str message " (" (log-level s) ")")))
+    (str message " (" error ")")))
